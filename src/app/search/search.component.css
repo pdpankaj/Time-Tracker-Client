@@ -1,0 +1,22 @@
+td {
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-right:20px;   
+  }
+
+  .add{
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:green;
+    color:white;
+    min-width:90px;
+    min-height:10px;
+}
+
+.search{
+    background-color:blue;
+    color:white;
+    min-width:90px;
+    min-height:10px;
+
+}

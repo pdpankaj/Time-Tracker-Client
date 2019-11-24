@@ -1,0 +1,62 @@
+<div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label for="firstName">First Name:</label>
+                  <input [(ngModel)]="searchFirstName" placeholder="First Name">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label for="firstName">Last Name:</label>
+                  <input [(ngModel)]="searchlastName" placeholder="Last Name">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label for="firstName">Email ID:</label>
+                  <input [(ngModel)]="searchEmail" placeholder="Email ID">
+            </div>
+
+</div>
+<div class="row">
+</div>
+
+<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <button class="btn search" (click)="searchClick()">Search</button>
+
+            <button class="btn add" (click)="setEmployeeId(-1)" routerLink="/addemployee">Add New</button>
+      </div>
+</div>
+<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <table class="table table-striped">
+                  <thead>
+                        <tr>
+                              <td><b>First Name</b></td>
+                              <td><b>Last Name</b></td>
+                              <td><b>Email ID</b></td>
+                              <td><b>In Time</b></td>
+                              <td><b>Out Time</b></td>
+                              <td></td>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr
+                              *ngFor="let employee of employees | paginate: { itemsPerPage: searchCount, currentPage: searchPage }">
+                              <td>{{employee.firstName}}</td>
+                              <td>{{employee.lastName}}</td>
+                              <td>{{employee.emailId}}</td>
+                              <td>{{employee.inTime}}</td>
+                              <td>{{employee.outTime}}</td>
+                              <td>
+                                    <button class="btn add" (click)="existingEmployee(employee)"
+                                          routerLink="/addemployee">Add</button>
+
+                                    <button class="btn btn-danger" (click)="deleteEmployee(employee)">Delete</button>
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+            <!--Including the pagination control.-->
+            <div class="text-right">
+                  <pagination-controls (pageChange)="searchPage = $event"></pagination-controls>
+            </div>
+
+      </div>
+</div>

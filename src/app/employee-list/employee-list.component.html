@@ -1,0 +1,18 @@
+<table class="table table-responsive">
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>EmailId</th>
+  <th>In Time</th>
+  <th>Out Time</th>
+  </tr>
+  <tbody>
+  <tr *ngFor="let employee of filteredEmployees | filter: searchByKeyword: 'emailId'">
+  <td>{{ employee.firstName}}</td>
+  <td>{{ employee.lastName}}</td>
+  <td>{{ employee.emailId}}</td>
+  <td>{{ employee.inTime}}</td>
+  <td>{{ employee.outTime}}</td>
+  </tr>
+  </tbody>
+  </table>

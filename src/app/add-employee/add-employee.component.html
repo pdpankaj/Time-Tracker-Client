@@ -1,0 +1,42 @@
+<div class="col-md-6" user-container>
+  <h2 class="text-center">Submit Your Time</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="name" placeholder="First Name" name="firstName" class="form-control" formControlName="firstName"
+        id="firstName">
+        <div class="error" *ngIf="addForm.controls['firstName'].hasError('required') && addForm.controls['firstName'].touched">First name is required</div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="name" placeholder="Last Name" name="lastName" formControlName="lastName" class="form-control"
+        id="lastName">
+        <div class="error" *ngIf="addForm.controls['lastName'].hasError('required') && addForm.controls['lastName'].touched">Last name is required</div>
+    </div>
+
+    <div class="form-group">
+      <label for="emailId">Email ID:</label>
+      <input type="email" placeholder="Email ID" name="emailId" formControlName="emailId" class="form-control"
+        id="emailId">
+        <div class="error" *ngIf="addForm.controls['emailId'].hasError('required') && addForm.controls['emailId'].touched">Email ID is required</div>
+        <div class="error" *ngIf="addForm.controls['emailId'].hasError('email') && addForm.controls['emailId'].touched">Email ID is required</div>
+        
+    </div>
+
+    <div class="form-group">
+      <label for="inTime">In Time:</label>
+      <input type="text"  placeholder="21.11.2019 09:00" name="inTime" class="form-control" formControlName="inTime" id="inTime">
+      <div class="error" *ngIf="addForm.controls['inTime'].hasError('required') && addForm.controls['inTime'].touched">In time is required</div>
+    </div>
+
+    <div class="form-group">
+      <label for="outTime">Out Time:</label>
+      <input type="text"  placeholder="21.11.2019 17:00" name="outTime" class="form-control" formControlName="outTime" id="outTime">
+      <div class="error" *ngIf="addForm.controls['outTime'].hasError('required') && addForm.controls['outTime'].touched">Out time is required</div>
+    </div>
+
+    <button class="btn btn-primary" [disabled]="addForm.invalid">Create</button>
+  </form>
+
+</div>

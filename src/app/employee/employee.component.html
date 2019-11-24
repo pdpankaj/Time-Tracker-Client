@@ -1,0 +1,29 @@
+<div>
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Id</th>
+          <th>In Time</th>
+          <th>Out Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees | paginate: { itemsPerPage: count, currentPage: p }">
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.emailId}}</td>
+          <td>{{employee.inTime}}</td>
+          <td>{{employee.outTime}}</td>
+          <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete Employee</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--Including the pagination control.-->
+  <div class="text-right">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>
