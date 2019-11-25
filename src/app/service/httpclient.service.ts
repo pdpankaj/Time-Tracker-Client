@@ -32,22 +32,22 @@ export class HttpClientService {
 
   getEmployees() : Observable<any> {
     console.log('******   getEmployees');
-    return this.httpClient.get<Employee[]>('http://'+window.location.hostname+':8080/Time-Tracker/employees');
+    return this.httpClient.get<Employee[]>('http://'+window.location.hostname+':8080/Time-Tracker-0.0.1-SNAPSHOT/Time-Tracker/employees');
   }
 
   getEmployeeByEmailId() : Observable<any> {
     console.log('******   getEmployeeByEmailId');
-    return this.httpClient.get<Employee[]>("http://"+window.location.hostname+":8080/Time-Tracker/employees" + "/email/" + this.getEmployeeEmailId());
+    return this.httpClient.get<Employee[]>("http://"+window.location.hostname+":8080/Time-Tracker-0.0.1-SNAPSHOT/Time-Tracker/employees" + "/email/" + this.getEmployeeEmailId());
   }
 
   public deleteEmployee(employee) {
     console.log('deleteEmployee');
-    return this.httpClient.delete<Employee>("http://"+window.location.hostname+":8080/Time-Tracker/employees" + "/" + employee.empId);
+    return this.httpClient.delete<Employee>("http://"+window.location.hostname+":8080/Time-Tracker-0.0.1-SNAPSHOT/Time-Tracker/employees" + "/" + employee.empId);
   }
 
   public createEmployee(employee) {
     console.log('****  createEmployee '+employee);
-    return this.httpClient.post<Employee>("http://"+window.location.hostname+":8080/Time-Tracker/employees", employee);
+    return this.httpClient.post<Employee>("http://"+window.location.hostname+":8080/Time-Tracker-0.0.1-SNAPSHOT/Time-Tracker/employees", employee);
   }
 
   remployeeId: number = -1;

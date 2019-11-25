@@ -27,7 +27,7 @@ export class AuthenticationService {
      }
 
      authenticate(username, password) {
-      return this.httpClient.post<any>('http://'+window.location.hostname+':8080/Time-Tracker/authenticate',{username,password}).pipe(
+      return this.httpClient.post<any>('http://'+window.location.hostname+':8080/Time-Tracker-0.0.1-SNAPSHOT/Time-Tracker/authenticate',{username,password}).pipe(
        map(
          userData => {
           sessionStorage.setItem('username',username);
@@ -45,7 +45,6 @@ export class AuthenticationService {
     let user = sessionStorage.getItem('username')
     //console.log(!(user === null))
     return !(user === null)
-    //return true;
   }
 
   logOut() {
