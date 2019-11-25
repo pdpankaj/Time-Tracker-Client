@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,6 +42,9 @@ import { ExistingEmployeeComponent } from './existing-employee/existing-employee
   providers: [
     {
       provide:HTTP_INTERCEPTORS, useClass:JWTAuthHtppInterceptorService, multi:true 
+    },
+    {
+      provide: LocationStrategy, useClass: PathLocationStrategy
     }
   ],
   bootstrap: [AppComponent]

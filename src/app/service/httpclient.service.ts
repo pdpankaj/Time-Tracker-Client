@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of, Subject } from 'rxjs';
+import { LocationStrategy } from '@angular/common';
 
 export class Employee {
   constructor(
@@ -22,28 +23,31 @@ export class HttpClientService {
   getGroupFilter = this.setGroupFilter$.asObservable();
   
   constructor(
-    private httpClient: HttpClient
+    private httpClient: HttpClient,
+    private locationStrategy: LocationStrategy
   ) {
+    //console.log('####### '+ this.locationStrategy.getBaseHref());
+    //console.log('####### '+ window.location);
   }
 
   getEmployees() : Observable<any> {
     console.log('******   getEmployees');
-    return this.httpClient.get<Employee[]>('http://localhost:8080/employees');
+    return this.httpClient.get<Employee[]>('http://'+window.location.hostname+':8080/Time-Tracker/employees');
   }
 
   getEmployeeByEmailId() : Observable<any> {
     console.log('******   getEmployeeByEmailId');
-    return this.httpClient.get<Employee[]>("http://localhost:8080/employees" + "/email/" + this.getEmployeeEmailId());
+    return this.httpClient.get<Employee[]>("http://"+window.location.hostname+":8080/Time-Tracker/employees" + "/email/" + this.getEmployeeEmailId());
   }
 
   public deleteEmployee(employee) {
     console.log('deleteEmployee');
-    return this.httpClient.delete<Employee>("http://localhost:8080/employees" + "/" + employee.empId);
+    return this.httpClient.delete<Employee>("http://"+window.location.hostname+":8080/Time-Tracker/employees" + "/" + employee.empId);
   }
 
   public createEmployee(employee) {
     console.log('****  createEmployee '+employee);
-    return this.httpClient.post<Employee>("http://localhost:8080/employees", employee);
+    return this.httpClient.post<Employee>("http://"+window.location.hostname+":8080/Time-Tracker/employees", employee);
   }
 
   remployeeId: number = -1;

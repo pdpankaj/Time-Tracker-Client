@@ -271,20 +271,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/dist/ngx-pagination.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _add_employee_add_employee_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./add-employee/add-employee.component */ "./src/app/add-employee/add-employee.component.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./logout/logout.component */ "./src/app/logout/logout.component.ts");
-/* harmony import */ var _service_jwtauth_htpp_interceptor_service_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./service/jwtauth-htpp-interceptor-service.service */ "./src/app/service/jwtauth-htpp-interceptor-service.service.ts");
-/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
-/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
-/* harmony import */ var _existing_employee_existing_employee_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./existing-employee/existing-employee.component */ "./src/app/existing-employee/existing-employee.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _add_employee_add_employee_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./add-employee/add-employee.component */ "./src/app/add-employee/add-employee.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _logout_logout_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./logout/logout.component */ "./src/app/logout/logout.component.ts");
+/* harmony import */ var _service_jwtauth_htpp_interceptor_service_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./service/jwtauth-htpp-interceptor-service.service */ "./src/app/service/jwtauth-htpp-interceptor-service.service.ts");
+/* harmony import */ var _search_search_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./search/search.component */ "./src/app/search/search.component.ts");
+/* harmony import */ var _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pipe/filter.pipe */ "./src/app/pipe/filter.pipe.ts");
+/* harmony import */ var _existing_employee_existing_employee_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./existing-employee/existing-employee.component */ "./src/app/existing-employee/existing-employee.component.ts");
+
 
 
 
@@ -309,31 +311,34 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _employee_employee_component__WEBPACK_IMPORTED_MODULE_6__["EmployeeComponent"],
-                _add_employee_add_employee_component__WEBPACK_IMPORTED_MODULE_8__["AddEmployeeComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
-                _logout_logout_component__WEBPACK_IMPORTED_MODULE_13__["LogoutComponent"],
-                _search_search_component__WEBPACK_IMPORTED_MODULE_15__["SearchComponent"],
-                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_16__["FilterPipe"],
-                _existing_employee_existing_employee_component__WEBPACK_IMPORTED_MODULE_17__["ExistingEmployeeComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _employee_employee_component__WEBPACK_IMPORTED_MODULE_7__["EmployeeComponent"],
+                _add_employee_add_employee_component__WEBPACK_IMPORTED_MODULE_9__["AddEmployeeComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
+                _logout_logout_component__WEBPACK_IMPORTED_MODULE_14__["LogoutComponent"],
+                _search_search_component__WEBPACK_IMPORTED_MODULE_16__["SearchComponent"],
+                _pipe_filter_pipe__WEBPACK_IMPORTED_MODULE_17__["FilterPipe"],
+                _existing_employee_existing_employee_component__WEBPACK_IMPORTED_MODULE_18__["ExistingEmployeeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"],
                 ngx_pagination__WEBPACK_IMPORTED_MODULE_3__["NgxPaginationModule"]
             ],
             providers: [
                 {
-                    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HTTP_INTERCEPTORS"], useClass: _service_jwtauth_htpp_interceptor_service_service__WEBPACK_IMPORTED_MODULE_14__["JWTAuthHtppInterceptorService"], multi: true
+                    provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HTTP_INTERCEPTORS"], useClass: _service_jwtauth_htpp_interceptor_service_service__WEBPACK_IMPORTED_MODULE_15__["JWTAuthHtppInterceptorService"], multi: true
+                },
+                {
+                    provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["PathLocationStrategy"]
                 }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1051,7 +1056,7 @@ var AuthenticationService = /** @class */ (function () {
         this.httpClient = httpClient;
     }
     AuthenticationService.prototype.authenticate = function (username, password) {
-        return this.httpClient.post('http://localhost:8080/authenticate', { username: username, password: password }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (userData) {
+        return this.httpClient.post('http://' + window.location.hostname + ':8080/Time-Tracker/authenticate', { username: username, password: password }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (userData) {
             sessionStorage.setItem('username', username);
             var tokenStr = 'Bearer ' + userData.token;
             sessionStorage.setItem('token', tokenStr);
@@ -1095,6 +1100,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+
 
 
 
@@ -1112,29 +1119,32 @@ var Employee = /** @class */ (function () {
 }());
 
 var HttpClientService = /** @class */ (function () {
-    function HttpClientService(httpClient) {
+    function HttpClientService(httpClient, locationStrategy) {
         this.httpClient = httpClient;
+        this.locationStrategy = locationStrategy;
         this.setGroupFilter$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.getGroupFilter = this.setGroupFilter$.asObservable();
         this.remployeeId = -1;
         this.remailId = "";
         this.remployee = null;
+        //console.log('####### '+ this.locationStrategy.getBaseHref());
+        //console.log('####### '+ window.location);
     }
     HttpClientService.prototype.getEmployees = function () {
         console.log('******   getEmployees');
-        return this.httpClient.get('http://localhost:8080/employees');
+        return this.httpClient.get('http://' + window.location.hostname + ':8080/Time-Tracker/employees');
     };
     HttpClientService.prototype.getEmployeeByEmailId = function () {
         console.log('******   getEmployeeByEmailId');
-        return this.httpClient.get("http://localhost:8080/employees" + "/email/" + this.getEmployeeEmailId());
+        return this.httpClient.get("http://" + window.location.hostname + ":8080/Time-Tracker/employees" + "/email/" + this.getEmployeeEmailId());
     };
     HttpClientService.prototype.deleteEmployee = function (employee) {
         console.log('deleteEmployee');
-        return this.httpClient.delete("http://localhost:8080/employees" + "/" + employee.empId);
+        return this.httpClient.delete("http://" + window.location.hostname + ":8080/Time-Tracker/employees" + "/" + employee.empId);
     };
     HttpClientService.prototype.createEmployee = function (employee) {
         console.log('****  createEmployee ' + employee);
-        return this.httpClient.post("http://localhost:8080/employees", employee);
+        return this.httpClient.post("http://" + window.location.hostname + ":8080/Time-Tracker/employees", employee);
     };
     HttpClientService.prototype.getEmployeeId = function () {
         return this.remployeeId;
@@ -1158,7 +1168,8 @@ var HttpClientService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"]])
     ], HttpClientService);
     return HttpClientService;
 }());
