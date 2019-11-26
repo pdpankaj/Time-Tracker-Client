@@ -29,8 +29,7 @@ export class AddEmployeeComponent implements OnInit {
       emailId: ['', [Validators.required, Validators.email]],
       inTime: ['', Validators.required],
       outTime: ['', Validators.required]
-    },
-      { validators: this.InOutTimeValidation });
+    });
 
     let existingEmployee = this.httpClientService.getEmployee();
     if (existingEmployee) {
